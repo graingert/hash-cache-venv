@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 module = "hash_cache_venv"
 author = "Thomas Grainger"
 author-email = "tagrain@gmail.com"
-home-page = "https://github.com/graingert/hash_cache_venv"
+home-page = "https://github.com/graingert/hash-cache-venv"
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
