@@ -1,0 +1,45 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "hash_cache_venv"
+author = "Thomas Grainger"
+author-email = "tagrain@gmail.com"
+home-page = "https://github.com/graingert/hash_cache_venv"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires = [
+    "virtualenv ~= 20.0",
+    "packaging ~= 20.4",
+    "appdirs ~= 1.4",
+    "filelock ~= 3.0",
+]
+
+[tool.flit.metadata.requires-extra]
+# requirements needed to make a zipapp run on both python 2 and 3
+zipapp = [
+    "importlib-metadata ~= 1.7",
+    "importlib-resources ~= 3.0",
+    "pathlib2 ~= 2.3.5",
+    "zipp ~= 1.2",
+    "contextlib2 ~= 0.6",
+    "configparser ~= 4.0",
+    "singledispatch ~= 3.4",
+]
