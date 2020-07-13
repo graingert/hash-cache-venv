@@ -3,7 +3,7 @@ get or a create a cached virtual environment based on requirements
 
 usage: ENV_DIR=$(hash-cache-venv requirements-pypa.txt requirements.txt)
 """
-__version__ = "0.0.0"
+__version__ = "0.0.0.post0"
 
 import errno
 import hashlib
