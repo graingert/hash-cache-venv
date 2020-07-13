@@ -41,3 +41,12 @@ repos:
     hooks:
       - id: prettier
         args: [--prose-wrap=always, --print-width=88]
+
+  - repo: local
+    hooks:
+      - id: build-pyz
+        name: build pyz
+        entry: ./build-pyz.sh
+        language: python
+        language_version: python3.8
+        files: ^(requirements-zipapp\.txt|hash-cache-venv\.pyz)$

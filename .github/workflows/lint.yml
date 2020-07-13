@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         python-version: [3.8]
@@ -36,6 +36,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt-get install strip-nondeterminism
           python -m pip install --upgrade pip
           python -m pip install --upgrade tox
 
